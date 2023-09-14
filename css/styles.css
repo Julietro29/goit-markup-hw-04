@@ -111,6 +111,16 @@ a {
     letter-spacing: 0.02em;
     display: inline-block;
 }
+.nav-link>li:first-child a {
+    position: relative;
+    color: var(--c-ocean);
+    box-sizing: border-box;
+}
+.nav-link::after {
+    content: none;
+    border-radius: 2px;
+    background: var(--OCEAN, #404BBF);
+}
 
 .nav-link:hover,
 .nav-link:active,
@@ -157,7 +167,6 @@ adress-link:active,
     font-weight: 700;
     line-height: 1.07;
     letter-spacing: 0.02em;
-    text-transform: capitalize;
     margin: 0 auto;
     margin-bottom: 48px;
     max-width: 496px;
@@ -218,8 +227,19 @@ button {
     text-transform: capitalize;
     margin-bottom: 8px;
 }
+.goals-list-item-icon {
+display: flex;
+align-items: center;
+justify-content: center;
+border-radius: 4px;
+    border: 1px solid var(--LIGHT-SLATE, #8E8F99);
+    background: var(--CLOUD, #F4F4FD);
+    padding-top: 24px;
+    padding-bottom: 24px;
+    margin-bottom: 8px;
+}
 .goals-items-icon {
-    fill: var(--c-background);
+    fill: none;
 }
 .goals-text {
     color: var(--c-adress-link);
@@ -255,6 +275,15 @@ button {
 .our-team-person {
     padding: 32px 0;
 }
+.our-team-socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+
+}
+.out-team-icons {
+}
 .our-team-item-title {
     color: var(--c-background);
     font-size: 20px;
@@ -272,6 +301,7 @@ button {
     line-height: 1.5;
     letter-spacing: 0.02em;
     text-align: center;
+    margin-bottom: 8px;
 }
 /* END Our team section */
 
@@ -321,11 +351,6 @@ button {
 /* END Our portfolio section */
 
 /* START footer */
-.footer-section {
-    padding-top: 100px;
-    padding-bottom: 100px;
-    background-color: var(--c-background);
-}
 .footer-logo {
     align-items: center;
     font-family: "Raleway", sans-serif;
@@ -338,14 +363,55 @@ button {
     display: inline-block;
     margin-bottom: 16px;
 }
-
 .footer-logo-accent {
     color: var(--c-team-background);
 }
+
+.footer-inner {
+    display: flex;
+    align-items: baseline;
+}
+
+.footer-info {
+    margin-left: 156px;
+    margin-right: 120px;
+}
+/* .footer-text {
+    max-width: 264px;
+} */
+
+/* .footer-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+} */
+
+
+.footer-section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: var(--c-background);
+}
+
 .footer-text {
     color: var(--c-team-background);
     font-weight: 400;
     line-height: 1.5;
     letter-spacing: 0.02em;
     max-width: 264px;
+}
+.footer-socials-text {
+color: var(--c-white);
+font-weight: 500;
+line-height: 1.5;
+letter-spacing: 0.02em;
+margin-bottom: 16px;
+}
+.footer-socials {
+display: flex;
+gap: 16px;
+}
+.footer-socials-icon {
+fill: var(--c-brand);
 }
