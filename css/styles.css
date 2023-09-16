@@ -308,9 +308,11 @@ button {
     display: flex;
     align-items: center;
     justify-content: center;
-    fill: var(--c-team-background);
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.team-soc-icon {
+    fill: var(--c-team-background);
 }
 .our-team-icons:hover,
 .our-team-icons:focus {
@@ -381,12 +383,16 @@ button {
     padding-right: 32px;
 }
 .our-portfolio-item:hover {
-    border: 1px solid var(--c-team-background));
+    border: 1px solid var(--c-team-background);
     box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
-    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
     transition-timing-function: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
+.our-portfolio-item {
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.our-portfolio-item:hover .portfolio-overlay-text {
+    transform: translateY(0%);
+}
 .our-portfolio-item:hover .our-portfolio-overlay {
     transform: translateY(0%);
 }
@@ -472,9 +478,11 @@ margin-right: 120px;
     display: flex;
     align-items: center;
     justify-content: center;
-    fill: var(--c-team-background);
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.soc-icon {
+    fill: var(--c-team-background);
 }
 .footer-socials-icon:hover,
 .footer-socials-icon:focus {
