@@ -165,7 +165,7 @@ a.adress-link {
 .hero-section {
     padding: 188px 0;
     background-color: var(--c-background);
-    background-image: linear-gradient(to bottom,
+    background-image: linear-gradient(
                 rgba(46, 47, 66, 0.7),
                 rgba(46, 47, 66, 0.7)),
             url(../images/people-office\ 1\ \(1\).jpg);
@@ -201,7 +201,7 @@ button {
     line-height: 1.5;
     letter-spacing: 0.04em;
     padding: 16px 32px;
-    background-color: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     border-radius: 4px;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
