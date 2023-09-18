@@ -163,6 +163,7 @@ a.adress-link {
     color: var(--c-ocean);
 }
 .hero-section {
+    margin: 0 auto;
     max-width: 1440px;
     padding: 188px 0;
     background-color: var(--c-background);
@@ -441,7 +442,6 @@ margin-right: 120px;
 .footer-inner {
     display: flex;
     align-items: baseline;
-    gap: 120px;
 }
 .footer-section {
     padding-top: 100px;
